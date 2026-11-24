@@ -8,6 +8,12 @@ One pinned commit of the sample application, traced end to end:
 GitHub PR → CI check → GitHub Actions deploy over OIDC → live invocation →
 evidence saved → stacks deleted.
 
+**PR checkout.** The CI check on this PR (run 45200153853) ran on checkout
+`413b523` on branch `submission`. This PR is now at `a339000`, based on
+`main` at `03919e5`. The four commits between the two touch only
+`SUBMISSION.md` and this trace file, so the sample-application code at the
+PR checkout is identical to the deployed commit `03919e5`.
+
 ## The chain
 
 1. **PR.** Submission PR

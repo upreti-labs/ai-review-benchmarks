@@ -17,17 +17,17 @@ random codes.
 ## The finding in one paragraph
 
 On ordinary code defects, all five reviewers performed well (3 of 3 for
-every provider, and 5 of 5 on the held-out case). On three changes whose
-defects turn on live deployment facts, the same reviewers
-caught **5 of 15** observations from the code alone — and not one of them,
-in 15 observations, said the change could not be judged without deployment
-information. Given the deployment snapshot in the PR body, they caught
-**13 of 14** completed observations of the same defects. The split matters. All
-five code-only catches were case 06, where the README already documents
-the worker and queue mismatch, so the snapshot only confirmed which site was
-affected there. Cases 04 and 05 had no code-only catches at all, and the
-snapshot is what unlocked them, 8 of 9 completed observations once it was
-included. The evidence is
+every provider, and 5 of 5 on the held-out case). Two of the deployment
+changes, cases 04 and 05, have defects that exist only against live
+deployment facts: no reviewer caught either from the code alone (0 of 10
+observations). The third, case 06, is different: the worker and queue
+mismatch is already written in the README, so all five reviewers caught it
+from the code alone. Across all 15 code-only observations of the three
+changes, not one reviewer said the change could not be judged without
+deployment information. Given the deployment snapshot in the PR body, they
+caught **13 of 14** completed observations of the same defects: the snapshot
+confirmed which site was affected in case 06, and it unlocked cases 04 and
+05, 8 of 9 completed observations once it was included. The evidence is
 the bottleneck, and the missing "I don't have what I need to judge this"
 is the gap.
 
