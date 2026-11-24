@@ -45,7 +45,7 @@ is the gap.
    prescribes for snapshot cases.
 4. **`bench/results/`** — generated score and coverage tables;
    **`bench/grades.csv`** — every graded claim with its reason;
-   **`bench/raw/`** — every review, verbatim.
+   **`bench/raw/`** — every review received, verbatim.
 
 ## Honest notes
 
@@ -59,6 +59,8 @@ is the gap.
   branch as `trace/aws-trace.md`, with the workflow links and the live
   invocation receipt.
 - Total spend: **$0**. No payment card was entered anywhere; four of the
-  five providers were run on free trials after their advertised free
-  tiers turned out not to cover private organisation repositories — the
-  report's plan-reality table has the details.
+  five providers were run on free trials. The report's plan-reality table
+  has the provider-specific reasons.
+- Grading was blind by provider code, but the blinding was partial: the
+  review copies still carry the PR URLs, which name the run repos, and
+  product boilerplate remains. The report's limitations state this in full.

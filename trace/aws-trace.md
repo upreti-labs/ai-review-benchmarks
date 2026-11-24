@@ -8,11 +8,16 @@ One pinned commit of the sample application, traced end to end:
 GitHub PR → CI check → GitHub Actions deploy over OIDC → live invocation →
 evidence saved → stacks deleted.
 
-**PR checkout.** The CI check on this PR (run 45200153853) ran on checkout
-`413b523` on branch `submission`. This PR is now at `a339000`, based on
-`main` at `03919e5`. The four commits between the two touch only
-`SUBMISSION.md` and this trace file, so the sample-application code at the
-PR checkout is identical to the deployed commit `03919e5`.
+**PR checkout.** The CI check on this PR (run 45200153853) was triggered by
+the push of `413b523ecd360aa3089986db64bf7198251ad330` on branch `submission`.
+That SHA is what the run page records. A pull_request check does not test the
+branch head itself: the default checkout is the synthetic merge of that head
+with main at `03919e5`. That merge is trivial here: `413b523`'s parent is
+`03919e5`, so there was nothing on main to merge in, and the merge tree is
+`413b523`'s tree. The only difference between `413b523` and `03919e5` is the
+added SUBMISSION.md; every other file, including the whole sample application,
+is identical. So the check in run 45200153853 ran against the same application
+tree as the deployed commit `03919e5`.
 
 ## The chain
 
