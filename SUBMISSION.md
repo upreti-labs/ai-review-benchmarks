@@ -28,10 +28,12 @@ one observation, Proofline on case 05, where no review arrived at all. That
 is a count of grades, not of everything the reviewers wrote: grading is per
 filed claim, and risk prose that files no finding earns no grade. Given the deployment snapshot in the PR body, they
 caught **13 of 14** completed observations of the same defects: the snapshot
-confirmed which site was affected in case 06, and it unlocked cases 04 and
-05, 8 of 9 completed observations once it was included. The evidence is
-the bottleneck, and the missing "I don't have what I need to judge this"
-is the gap.
+confirmed which site was affected in three of the five case-06 catches (the
+other two caught the queue mismatch without naming the site), and it unlocked
+cases 04 and 05, 8 of 9 completed observations once it was included. The evidence is
+the bottleneck, and the gap is in what was filed: no filed finding earned the
+appropriate-uncertainty grade, even though some ungraded prose named the missing
+deployment facts.
 
 ## How to review this PR
 
