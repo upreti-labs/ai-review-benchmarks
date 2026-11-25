@@ -22,9 +22,11 @@ changes, cases 04 and 05, have defects that exist only against live
 deployment facts: no reviewer caught either from the code alone (0 of 10
 observations). The third, case 06, is different: the worker and queue
 mismatch is already written in the README, so all five reviewers caught it
-from the code alone. Across all 15 code-only observations of the three
-changes, not one reviewer said the change could not be judged without
-deployment information. Given the deployment snapshot in the PR body, they
+from the code alone. Across the 15 code-only observations of the three
+changes, the appropriate-uncertainty grade was earned zero times, including
+one observation, Proofline on case 05, where no review arrived at all. That
+is a count of grades, not of everything the reviewers wrote: grading is per
+filed claim, and risk prose that files no finding earns no grade. Given the deployment snapshot in the PR body, they
 caught **13 of 14** completed observations of the same defects: the snapshot
 confirmed which site was affected in case 06, and it unlocked cases 04 and
 05, 8 of 9 completed observations once it was included. The evidence is
